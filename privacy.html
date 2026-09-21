@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー — Beer Hub</title>
+  <meta name="description" content="Beer Hub のプライバシーポリシー。必要のないものを集めない方針・位置情報・写真・公開範囲の扱い。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <h1>プライバシーポリシー</h1>
+    <div class="en">BEER HUB</div>
+    <p class="updated">最終更新日: 2026年9月21日</p>
+  </header>
+
+  <p>「Beer Hub」（以下「本アプリ」）は、日本のブルワリーを訪ねた記録を残すためのアプリです。本アプリは、<strong>必要のないものを集めない</strong>ことを設計の方針にしています。</p>
+
+  <h2>1. アカウントについて</h2>
+  <div class="card">
+    <ul>
+      <li>🔴 <strong>アカウント登録はありません。</strong> メールアドレス・電話番号・氏名・生年月日は、一切お預かりしません。</li>
+      <li>「みんなのメモ」またはランキングを使うときにかぎり、本アプリは<strong>匿名の識別子を自動で作ります</strong>（Firebase の匿名認証）。これは<strong>ランダムな文字列</strong>で、あなた個人と結び付く情報は含みません。自分の投稿をあとから消せるようにするためのものです。</li>
+      <li><strong>ニックネーム</strong>は、あなたが自分で決めて入力するものです。</li>
+      <li>🔴 <strong>ニックネームは他の利用者に表示されます。本名を入れないでください。</strong></li>
+    </ul>
+  </div>
+
+  <h2>2. サーバーに保存されるもの</h2>
+  <p>他の人と共有するために、次のものは<strong>サーバーに保存されます</strong>。いずれも<strong>あなたが自分で操作したときだけ</strong>送られます。</p>
+  <div class="card scroll">
+    <table>
+      <tr><th>保存されるもの</th><th>内容</th><th>いつ送られるか</th></tr>
+      <tr><td>みんなのメモ</td><td>どの醸造所か・<strong>ニックネーム</strong>・<strong>メモの本文</strong>・投稿日時・匿名の識別子</td><td>「このメモを公開する」を押したとき</td></tr>
+      <tr><td>ランキング</td><td><strong>ニックネーム</strong>・<strong>訪問した軒数</strong>・<strong>訪問した都道府県の数</strong>・更新日時</td><td>ランキングに参加しているあいだ</td></tr>
+      <tr><td>投稿の間隔</td><td>最後に投稿した時刻だけ（連続投稿を防ぐため）</td><td>メモを公開したとき</td></tr>
+    </table>
+  </div>
+  <p>🔴 <strong>メモに添えた写真と、訪問した日付は、公開されません。</strong> サーバーにも送られません。公開されるのはニックネームと本文だけです。</p>
+
+  <p>次のものは<strong>あなたの端末内にだけ</strong>保存され、サーバーには送られません。</p>
+  <div class="card scroll">
+    <table>
+      <tr><th>端末内だけ</th><th>内容</th></tr>
+      <tr><td>訪問の記録</td><td>どの醸造所に・いつ行ったか</td></tr>
+      <tr><td>ひとことメモ</td><td>公開していないメモの本文</td></tr>
+      <tr><td>写真</td><td>訪問に添えた写真（1軒4枚まで）</td></tr>
+      <tr><td>実績</td><td>訪問数・県数から計算されるもの（保存はされず、その場で数えます）</td></tr>
+      <tr><td>設定</td><td>ニックネーム・ランキングに参加するかどうか</td></tr>
+    </table>
+  </div>
+  <p>保存先は <strong>Firebase</strong>（Google のデータベースと認証）です。<strong>国外のサーバーに保存される場合があります。</strong></p>
+
+  <h2>3. 位置情報について</h2>
+  <div class="card">
+    <ul>
+      <li>🔴 <strong>使い道は1つだけです</strong>＝地図を開いたときに、<strong>あなたの現在地を地図の上に表示し、その周辺へ地図を動かす</strong>こと。</li>
+      <li>🔴 <strong>取得した現在地は、保存も送信もしません。</strong> 位置の履歴は作りません。</li>
+      <li>🔴 <strong>常時取得・バックグラウンドでの取得はしません。</strong> アプリを開いていないときに居場所を調べることはありません。</li>
+      <li>🔴 <strong>訪問の記録に位置情報は使いません。</strong> 「その醸造所へ行った」かどうかは、<strong>あなたが自分でボタンを押して決めます</strong>。近くにいるかどうかは判定しません。</li>
+      <li><strong>位置情報の許可は必須ではありません。</strong> 許可しない場合でも、本アプリの機能はすべて使えます（地図が現在地から始まらないだけです）。</li>
+    </ul>
+  </div>
+
+  <h2>4. 写真について</h2>
+  <div class="card">
+    <ul>
+      <li>🔴 <strong>写真はサーバーに送られません。</strong> 端末の中だけに保存されます。</li>
+      <li>写真を選ぶと、その写真の<strong>撮影日</strong>を読み取り、訪問日の既定値にします（あとから直せます）。読み取るのは日付だけで、<strong>撮影場所の位置情報は読み取りません</strong>。</li>
+      <li><strong>カメラで撮った写真は、端末の写真アプリにも保存します。</strong> 本アプリを削除しても写真が消えてしまわないようにするためです。写真ライブラリから選んだ写真は、元が残っているので二重には保存しません。</li>
+      <li>写真を「外す」と、本アプリが持っている複製を消します。<strong>写真アプリ側の原本は消えません。</strong></li>
+    </ul>
+  </div>
+
+  <h2>5. 公開範囲について</h2>
+  <div class="card">
+    <ul>
+      <li><strong>既定では、何も公開されません。</strong> 訪問の記録・写真・メモは、あなたの端末の中だけにあります。</li>
+      <li><strong>みんなのメモ</strong>は、あなたが「このメモを公開する」を押したときだけ、その醸造所のページを見た人に表示されます。表示されるのは<strong>ニックネームと本文だけ</strong>です。</li>
+      <li><strong>ランキング</strong>は、参加を選んだときだけ、<strong>ニックネーム・訪問軒数・県数</strong>が他の利用者に表示されます。参加しなくても、本アプリの機能はすべて使えます。</li>
+      <li>公開したメモは、<strong>いつでも自分で消せます</strong>。ランキングも、参加をやめれば自分の行が消えます。</li>
+    </ul>
+  </div>
+
+  <h2>6. データの削除について</h2>
+  <div class="card">
+    <ul>
+      <li><strong>公開したメモ</strong> … アプリ内で自分の投稿を削除できます。</li>
+      <li><strong>ランキング</strong> … 「参加をやめる」で、自分の行がサーバーから削除されます。</li>
+      <li><strong>端末内のデータ</strong> … 本アプリを削除すると、訪問の記録・メモ・アプリ内の写真の複製は消えます。<strong>復元はできません。</strong>（写真アプリに保存された写真は残ります。）</li>
+      <li>⚠️ 本アプリを削除しただけでは、<strong>すでに公開したメモとランキングの行は消えません。</strong> 先にアプリ内で削除してください。消し忘れた場合は、下記のお問い合わせ先へご連絡ください。</li>
+    </ul>
+  </div>
+
+  <h2>7. 広告・アクセス解析について</h2>
+  <div class="card">
+    <ul>
+      <li>🔴 <strong>広告は表示されません。</strong> 広告配信の仕組みは組み込んでいません。</li>
+      <li>🔴 <strong>アクセス解析（アナリティクス）は入れていません。</strong> 利用状況を追跡する仕組みは組み込んでいません。</li>
+      <li>そのため、本アプリは<strong>トラッキング許可（ATT）のダイアログを出しません</strong>。広告 ID は使いません。</li>
+      <li><strong>アプリ内課金はありません。</strong> 決済情報をお預かりすることもありません。</li>
+    </ul>
+  </div>
+
+  <h2>8. 地図について</h2>
+  <p>地図の表示に <strong>Google Maps</strong> を利用しています。地図の読み込みにともなう通信は Google に対して行われ、Google のプライバシーポリシーが適用されます。</p>
+
+  <h2>9. 年齢について</h2>
+  <p>本アプリは酒類の製造場を扱います。<strong>未成年者の飲酒は法律で禁止されています。</strong> 本アプリは飲酒を勧めるものではなく、醸造所を訪ねた記録を残すためのものです。</p>
+
+  <h2>10. ポリシーの変更</h2>
+  <p>必要に応じて本ポリシーを変更することがあります。重要な変更があった場合は、このページの最終更新日を改めます。</p>
+
+  <h2>11. お問い合わせ</h2>
+  <p><code>nanana03info@gmail.com</code></p>
+
+<nav class="links"><a href="index.html">トップ</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+  <footer>nanana03info@gmail.com</footer>
+</main>
+</body>
+</html>
