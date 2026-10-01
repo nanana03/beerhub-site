@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-10-01",
+    "scope": "app",
+    "macrostructure": "Map / Diagram (index) + Long Document (privacy, terms)",
+    "theme": "custom",
+    "theme_axes": "light (dark via prefers-color-scheme) / high-contrast-serif (Shippori Mincho B1) / warm amber",
+    "vibe": "地ビールの旅日記・琥珀と泡・紙の地図",
+    "nav": "N9 edge-aligned minimal",
+    "footer": "Ft1 mast-headed",
+    "enrichment": "Tier-B SVG map built from the app's own data (prefpoly.json + breweries.json)",
+    "brief": "Beer Hub · 全国のブルワリーを訪ねて集める iOS アプリ（未提出）の公開ページ刷新"
+  }
+]
