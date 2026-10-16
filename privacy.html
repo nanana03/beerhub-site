@@ -96,7 +96,7 @@
     <ul>
       <li>🔴 <strong>写真はサーバーに送られません。</strong> 端末の中だけに保存されます。</li>
       <li>写真を選ぶと、その写真の<strong>撮影日</strong>を読み取り、訪問日の既定値にします（あとから直せます）。</li>
-      <li>写真を選ぶと、その写真の<strong>撮影場所の位置情報</strong>（写真に記録されている場合）を読み取り、<strong>その醸造所から 1.5km 以内かどうか</strong>だけを確かめます（上の「現地確認」）。<strong>撮影場所の緯度・経度は記録に残さず、送信もしません。</strong></li>
+      <li>写真を選ぶと、その写真の<strong>撮影場所の位置情報</strong>（写真に記録されている場合）を読み取り、<strong>その醸造所から 1.5km 以内かどうか</strong>だけを確かめます（上の「現地確認」）。<strong>撮影場所の緯度・経度は記録に残さず、送信もしません。</strong> Android では、写真を選ぶ画面の設定によって撮影場所がアプリに渡されないことがあります。そのときは本アプリのカメラで撮るか、醸造所の近くで訪問を記録してください。</li>
       <li><strong>カメラで撮った写真は、端末の写真アプリにも保存します。</strong> 本アプリを削除しても写真が消えてしまわないようにするためです。写真ライブラリから選んだ写真は、元が残っているので二重には保存しません。</li>
       <li>写真を「外す」と、本アプリが持っている複製を消します。<strong>写真アプリ側の原本は消えません。</strong></li>
     </ul>
@@ -129,7 +129,8 @@
     <ul>
       <li><strong>無料版</strong>では、ログと都道府県の一覧に<strong>広告が表示されます</strong>（Google AdMob）。数件ごとに1枚で、「広告」と明示します。<strong>有料機能（Beer Hub Pro）をご利用中は広告は表示されません。</strong></li>
       <li>表示するのは<strong>非パーソナライズ広告</strong>です。あなたの過去の行動にもとづいて選ばれることはなく、表示中の画面の内容や、おおよその地域などの文脈情報が使われます。</li>
-      <li>本アプリは<strong>トラッキング許可（ATT）のダイアログを出しません</strong>。したがって<strong>広告識別子（IDFA）にアクセスしません</strong>。広告配信の仕組み上、表示回数の制限や集計のために識別子が使われることがありますが、広告のターゲティングには使われません。</li>
+      <li><strong>iPhone</strong>：本アプリは<strong>トラッキング許可（ATT）のダイアログを出しません</strong>。したがって<strong>広告識別子（IDFA）にアクセスしません</strong>。広告配信の仕組み上、表示回数の制限や集計のために識別子が使われることがありますが、広告のターゲティングには使われません。</li>
+      <li><strong>Android</strong>：広告の配信のため、Google の広告 SDK が<strong>広告 ID</strong>・IP アドレス（おおよその地域の推定に使われることがあります）・広告の表示やタップの情報・動作の診断情報を Google に送ります（Google の説明：developers.google.com/admob/android/privacy/play-data-disclosure）。広告 ID は Android の設定からリセット・削除できます。表示するのは上と同じ<strong>非パーソナライズ広告</strong>です。</li>
       <li>広告の「⋯」から、<strong>不適切な広告を運営に報告</strong>できます。同じメニューで<strong>その広告が表示される理由</strong>も確認できます。</li>
       <li>訪問の記録・メモ・写真・位置情報が<strong>広告のために提供されることはありません</strong>。</li>
       <li>🔴 <strong>アクセス解析（アナリティクス）は入れていません。</strong> 利用状況を追跡する仕組みは組み込んでいません。</li>
@@ -140,10 +141,10 @@
   <div class="card">
     <ul>
       <li>本アプリは無料で使えます。<strong>Beer Hub Pro</strong> は、写真の枚数や記録の上限を外し、広告を非表示にするための<strong>買い切りの支払い（一度きり）</strong>です。</li>
-      <li>購入と復元は <strong>Apple の App Store</strong> を通して行われます。</li>
+      <li>購入と復元は、iPhone では <strong>Apple の App Store</strong>、Android では <strong>Google Play</strong> を通して行われます。</li>
       <li>🔴 <strong>当社はクレジットカード番号などの決済情報を受け取りません。</strong></li>
-      <li>🔴 <strong>購入のためのサーバーを当社は持っていません。</strong> 購入したかどうかは Apple（StoreKit）が保持し、本アプリはそれを読むだけです。<strong>当社のサーバーにも、他社のサービスにも、購入の情報は送られません。</strong></li>
-      <li>そのため、購入の記録は<strong>あなたの Apple ID に紐づきます</strong>。同じ Apple ID なら別の端末でも「購入を復元」で引き継げます。</li>
+      <li>🔴 <strong>購入のためのサーバーを当社は持っていません。</strong> 購入したかどうかは Apple（StoreKit）または Google（Google Play 請求サービス）が保持し、本アプリはそれを読むだけです。<strong>当社のサーバーにも、他社のサービスにも、購入の情報は送られません。</strong></li>
+      <li>そのため、購入の記録は<strong>あなたの Apple ID（Android では Google アカウント）に紐づきます</strong>。同じ Apple ID・同じ Google アカウントなら、別の端末でも「購入を復元」で引き継げます（iPhone と Android の間では引き継げません）。</li>
       <li>当社が端末内に保存するのは「Pro を持っているかどうか」という<strong>はい/いいえの1つだけ</strong>です。</li>
     </ul>
   </div>
